@@ -8,8 +8,8 @@ public class Meses {
 		String resposta = "sim";
 
 		while (resposta.equals("sim") || resposta.equals("Sim") || resposta.equals("sIm") || resposta.equals("siM")
-				|| resposta.equals("SIm") || resposta.equals("sIM") || resposta.equals("SIM")
-				|| resposta.equals("SiM")) {
+				|| resposta.equals("SIm") || resposta.equals("sIM") || resposta.equals("SIM") || resposta.equals("SiM")
+				|| resposta.equals("s") || resposta.equals("S")) {
 			try {
 				Scanner sc = new Scanner(System.in);
 				System.out.println("Coloque o numeral correspondente ao seu mês de aniversário");
@@ -54,12 +54,11 @@ public class Meses {
 			resposta = sc.next();
 			if (!(resposta.equals("sim") || resposta.equals("Sim") || resposta.equals("sIm") || resposta.equals("siM")
 					|| resposta.equals("SIm") || resposta.equals("sIM") || resposta.equals("SIM")
-					|| resposta.equals("SiM"))) {
+					|| resposta.equals("SiM") || resposta.equals("s") || resposta.equals("S"))) {
 				System.out.println("Obrigado por utilizar nossos serviços!");
 				sc.close();
 			}
-			
-			
+
 		}
 
 	}
