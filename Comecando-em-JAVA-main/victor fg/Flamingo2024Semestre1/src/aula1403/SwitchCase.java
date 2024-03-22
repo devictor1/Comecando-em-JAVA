@@ -37,7 +37,8 @@ public class SwitchCase {
 				case 7:
 					System.out.println("SABADAMOSSSSSS");
 					break;
-															
+					default:
+						System.out.println("Por favor insira um valor válido");
 				}
 								
 			} catch (Exception e) {

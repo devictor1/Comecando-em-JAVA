@@ -8,11 +8,20 @@ package tarefa08;
 
 public class EX07 {
 	public static void main(String[] args) {
-		int B = (int) (Math.random() * 101);
-		int E = (int) (Math.random() * 101);
-		int resultado = (int) Math.pow(B, E);
-
-		System.out.println("O número " + B + " elevado à " + E + " é igual a " + resultado);
-
-	}
+		int fibonacci = 1;
+		int guardar = 0;
+		int fibonacci1 = 1;
+		
+		while (fibonacci >= 1) {
+			System.out.println(guardar + " + " + fibonacci1);
+			guardar = fibonacci;
+			fibonacci = guardar + fibonacci;
+			
+			try {
+                Thread.sleep(1000); // Aguarda 1 segundo
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }

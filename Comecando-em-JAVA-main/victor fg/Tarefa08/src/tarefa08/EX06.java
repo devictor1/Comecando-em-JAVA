@@ -5,13 +5,27 @@ e E o valor do expoente. Observe que neste exercício não pode ser utilizado o 
 
 package tarefa08;
 
+import java.util.Scanner;
+
 public class EX06 {
 	public static void main(String[] args) {
-		int B = (int) (Math.random() * 101);
-		int E = (int) (Math.random() * 101);
-		int resultado = (int) Math.pow(B, E);
-
-		System.out.println("O número " + B + " elevado à " + E + " é igual a " + resultado);
-
+		
+		Scanner sc = new Scanner(System.in);
+				
+		System.out.println("Por favor insira a base");
+		int B = sc.nextInt();
+		
+		System.out.println("Agora, por favor insira o expoente que irá decrescer");
+		int E = sc.nextInt();
+		
+		while (E >= 0) {
+		double resultado = Math.pow(B, E);
+		
+		System.out.println("O número base " + B + " elevado ao expoente " + E + " é igual a " + resultado);
+		
+		E--;
+		
+		}
+		sc.close();
 	}
 }
