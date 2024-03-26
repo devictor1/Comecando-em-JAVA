@@ -6,19 +6,16 @@ passe para o próximo passo.*/
 package tarefa08;
 
 public class EX04 {
- public static void main (String [] args) {
-	int numero = 1;
-	int resposta = 0;
-	
-	
-	while (numero < 21) {
-		if (numero % 2 != 0) {
-			resposta = numero;
-		System.out.print(resposta + " ");
+	public static void main(String[] args) {
+		int numero = 1;
+
+		while (numero < 21) {
+			if (numero % 2 != 0) {
+				System.out.print(numero + " ");
+			}
+			numero++;
+
 		}
-		numero ++;
-	
- }
- 
- }
+
+	}
 }
