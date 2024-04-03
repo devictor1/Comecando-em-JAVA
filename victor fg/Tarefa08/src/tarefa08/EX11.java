@@ -19,7 +19,7 @@ public class EX11 {
 		float soma = 0;
 		
 		while ((resposta.equals("SIM")||(resposta.equals("S"))) ) {
-			System.out.println("Insira o nome do cômodo escolhido:");
+			System.out.println("Insira o nome do cômodo escolhido, sem espaços:");
 			nome = sc.next();
 			
 			System.out.println("Agora insira a largura do(a) " + nome);
@@ -32,12 +32,12 @@ public class EX11 {
 			
 			soma += largura * comprimento;
 			
-			System.out.println("Gostaria de adicionar mais um cômodo?");
+			System.out.println("Gostaria de adicionar mais um cômodo? (Sim/Não)");
 			resposta = sc.next().toUpperCase();
 			
 			
 			}
 		System.out.println("A área total da sua residência é de " + soma + " metros quadrados!");
-		
+		sc.close();
 		}
 }
