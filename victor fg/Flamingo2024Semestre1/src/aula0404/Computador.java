@@ -1,7 +1,8 @@
 package aula0404;
 
 public class Computador {
-	int preco;
+	
+	float preco = 20.5f;
 	String processador;
 	String fonte;
 	String memoriaRam;
@@ -12,26 +13,30 @@ public class Computador {
 	String placaDeAudio;
 	String gabinete;
 	String cooler;
+	String rpm;
 	String [] acessorios;
 	String iluminacao;
 	String sistemaOperacional;
-	String velocidadeRam;
 	String velocidadeEscritaArmazenamento;
 	String velocidadeLeituraArmazentamento;
 	String clockProcessador;
 	String eficienciaFonte;
 	String [] modularidadeFonte;
 	String slotsSata;
+	String velocidadeSata;
 	String slotsPCIE;
-	String slotsRam;
+	String velocidadePCIE;
+	String slotsRAM;
+	String velocidadeRAM;
 	String velocidadeWiFi;
 	String velocidadeEthernet;
 	String conexoesDisponiveis;
 	
 	
 	public static void main(String[] args) {
+		Computador pc = new Computador();
 		
-
+		System.out.println(pc.preco);
 	}
 
 }
