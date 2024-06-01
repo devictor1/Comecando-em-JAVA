@@ -1,2 +1,2 @@
 # Comecando-em-JAVA
-Primeiros passos no terceiro semestre, iniciando com JAVA
+Terceiro Semestre do curso de Tecnologia de Análise e Desenvolvimento de Sistemas
